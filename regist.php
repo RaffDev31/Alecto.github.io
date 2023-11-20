@@ -1,13 +1,8 @@
 <?php
-include 'config.php';
+include("connection/config.php");
 session_start();
 
 $username = $email = $password = $cpassword = '';
-if (isset($_SESSION['username'])) {
-    header("Location: index.html");
-    exit();
-}
-
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $email = $_POST['email'];
@@ -15,24 +10,17 @@ if (isset($_POST['submit'])) {
     $cpassword = $_POST['cpassword'];
 
     if ($password == $cpassword) {
-        $hashed_password = hash('sha256', $password);
-        $stmt = $conn->prepare("SELECT * FROM users WHERE email=?");
-        $stmt->bind_param("s", $email);
-        $stmt->execute();
-        $result = $stmt->get_result();
+        $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (:username, :email, :password)");
+        $stmt->bindParam(':username', $username);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':password', $password);
 
-        if ($result->num_rows === 0) {
-            $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
-            $stmt->bind_param("sss", $username, $email, $hashed_password);
-            if ($stmt->execute()) {
-                echo "<script>alert('Congratulations, registration successful!')</script>";
-                $username = "";
-                $email = "";
-            } else {
-                echo "<script>alert('Woops! Something went wrong.')</script>";
-            }
+        if ($stmt->execute()) {
+            echo "<script>alert('Congratulations, registration successful!')</script>";
+            $username = "";
+            $email = "";
         } else {
-            echo "<script>alert('Woops! Email is already registered.')</script>";
+            echo "<script>alert('Woops! Something went wrong.')</script>";
         }
     } else {
         echo "<script>alert('Passwords do not match')</script>";
@@ -51,6 +39,7 @@ if (isset($_POST['submit'])) {
     <title>Register Pages</title>
 </head>
 <body>
+    <a href="../index.php" class="back-link"><i class="fa fa-close" style="color: #a200ff;"></i></a>
     <div class="container">
         <form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 600;">Register</p>
@@ -61,15 +50,15 @@ if (isset($_POST['submit'])) {
                 <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Password" name="username" value="<?php echo isset($username) ? $username : ''; ?>" required>
+                <input type="password" placeholder="Password" name="password" required minlength="8">
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Confirm Password" name="cpassword" value="" required>
+                <input type="password" placeholder="Confirm Password" name="cpassword" value="" required minlength="8">
             </div>
             <div class="input-group">
                 <button name="submit" class="btn">Register</button>
             </div>
-            <p class="login-register-text">Do you already have an account? <a href="login.php">Login</a></p>
+            <p class="login-register-text">Do you already have an account? <a href="controller/login.php">Login</a></p>
         </form>
     </div>
 </body>

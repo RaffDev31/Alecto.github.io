@@ -9,7 +9,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, rgba(155, 248, 244, 1) 0%, rgba(111, 123, 247, 1) 100%);
+    background: url('../Assets/Background/login\ bg.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,10 +48,67 @@ h1 {
 .back-link {
     position: absolute;
     top: 20px;
-    left: 20px;
-    color: black;
+    left: 44px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: #FFF;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+}
+.lock-icon {
+    font-size: 3rem;
+    color: #007ea6;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #005874;
+}
+
+p {
+    font-size: 12px;
+}
+
+
+.passInput {
+    margin-top: 15px;
+    width: 80%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid deepskyblue;
+    font-size: 15px;
+    color: black;
+    outline: none;
+}
+
+button {
+    margin-top: 15px;
+    width: 80%;
+    border-radius: 12px;
+    background-color: #007ea6;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: #005874;
 }
  
 .input-group {
@@ -94,6 +151,13 @@ h1 {
     transform: translateY(-5px);
     background: #005874;
 }
+
+.forgot-pass-text a {
+    font-size: 14px;
+    margin-top: 28px;
+    margin-left: 12px;
+    font-weight: 600;
+}
  
 .login-text{
     margin-bottom: .8rem;
@@ -110,12 +174,18 @@ h1 {
     color: #007ea6;
 }
 
-.login-register-text a {
+.login-register-text a, .forgot-pass-text a {
     color: #007ea6;
+    text-decoration: none;
 }
  
 @media (max-width: 430px) {
     .container {
         width: 300px;
+    }
+
+    .back-link {
+        left: 20px;
+        top: 12px;
     }
 }

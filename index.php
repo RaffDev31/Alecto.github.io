@@ -6,8 +6,8 @@
         <link rel="shortcut icon" href="img/Alecto logo white.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="Style/style.css">
-        <title>Alecto Website</title>
+        <link rel="stylesheet" href="Style/style.css"/>
+        <title>Alecto</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -33,15 +33,15 @@
                             <a href="#contact" class="nav__link">Contact Us</a>
                         </li>
                         <li class="nav__item">
-                            <a href="login.php" class="nav__link">Login</a>
+                            <a href="controller/login.php" class="nav__link">Login</a>
                         </li>
                     </ul>
-
+                   
                     <div class="nav__close" id="nav-close">
                         <i class="ri-close-line"></i>
                     </div>
                 </div>
-
+                
                 <div class="nav__btns">
                     <!-- Theme change button -->
                     <i class="ri-moon-line change-theme" id="theme-button"></i>
@@ -392,7 +392,7 @@
                     <div class="footer__cards">
                         <i class="fab fa-paypal footer__card" aria-hidden="true"></i>
                         <i class="fab fa-google-pay footer__card" aria-hidden="true"></i>
-                        <i class="fas fa-university footer__card" aria-hidden="true"></i>
+                        <i class="fas fa-credit-card footer__card" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>

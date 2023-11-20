@@ -112,9 +112,9 @@ img{
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
---first-color-dark: #510080; 
+--first-color-dark: #a200ff; 
 --first-color: #510080;
---first-color-alt: #a200ff;
+--first-color-alt: #510080;
 --nav-color: #F4E04D;
 --title-color: #f2f2f2; 
 --text-color: #ccc5b9;
@@ -752,10 +752,15 @@ the website, in dark theme
   width: 70%;
   padding: 0 .5rem;
   background: none;
-  color: var(--text-color);
+  color: #f2f2f2;
   border: none;
   outline: none;
 }
+
+.footer__input::placeholder {
+  color: #f2f2f2;
+}
+
 
 .footer__button{
   padding: 1rem;
