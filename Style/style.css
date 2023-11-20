@@ -115,6 +115,7 @@ body.dark-theme{
 --first-color-dark: #a200ff; 
 --first-color: #510080;
 --first-color-alt: #510080;
+--first-color-lighten: #510080;
 --nav-color: #F4E04D;
 --title-color: #f2f2f2; 
 --text-color: #ccc5b9;
@@ -147,8 +148,12 @@ the website, in dark theme
 }
 
 .dark-theme ,
-.dark-theme .footer__subscribe{
+.dark-theme{
   background-color: var(--container-color);
+}
+
+.footer__subscribe {
+  background-color: var(--first-color-dark);
 }
 
 .dark-theme .scroll-header{

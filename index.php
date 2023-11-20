@@ -377,7 +377,7 @@
                             <a href="https://www.instagram.com/alecto_official" class="footer__social-link">
                                 <i class="ri-instagram-fill"></i>
                             </a>
-                            <a href="https://youtube.com/AlectoOfficial11" class="footer__social-link">
+                            <a href="https://youtube.com/AlectoOfficial11"  class="footer__social-link">
                                 <i class="ri-youtube-fill"></i>
                             </a>
                         </div>
