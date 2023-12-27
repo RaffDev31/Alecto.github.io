@@ -102,7 +102,7 @@ const iconTheme = 'ri-sun-line'
 const aboutImg = document.querySelector('.about__img')
 
 // Path to the dark mode image
-const darkModeImagePath = 'img/Alecto logo white.png'
+const darkModeImagePath = 'Assets/Alecto logo white.png'
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -113,7 +113,7 @@ function changeImageBasedOnTheme() {
     if (getCurrentTheme() === 'dark') {
         aboutImg.src = darkModeImagePath
     } else {
-        aboutImg.src = 'img/Alecto logo black.png'
+        aboutImg.src = 'Assets/Alecto logo black.png'
     }
 }
 

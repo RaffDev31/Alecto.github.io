@@ -9,7 +9,9 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background: url('../Assets/Background/login\ bg.jpg');
+    background: url('../assets/Background/bg.png');
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +29,7 @@ body {
     position: relative;
 }
  
-.container-logout {
+.container {
     width: 500px;
     min-height: 200px;
     background: #FFF;
@@ -78,7 +80,7 @@ h2 {
     font-size: 1.5rem;
     margin-top: 10px;
     text-transform: uppercase;
-    color: #005874;
+    color: #1089FF;
 }
 
 p {
@@ -91,7 +93,7 @@ p {
     width: 80%;
     background: transparent;
     border: none;
-    border-bottom: 2px solid deepskyblue;
+    border-bottom: 2px solid #23374D;
     font-size: 15px;
     color: black;
     outline: none;
@@ -101,7 +103,7 @@ button {
     margin-top: 15px;
     width: 80%;
     border-radius: 12px;
-    background-color: #007ea6;
+    background-color: #1089FF;
     color: white;
     padding: 10px;
     border: none;
@@ -129,7 +131,7 @@ button:hover {
 }
  
 .input-group input:focus, .input-group input:valid {
-    border-color: #007ea6;
+    border-color: #23374D;
 }
  
 .input-group .btn {
@@ -138,7 +140,7 @@ button:hover {
     padding: 15px 20px;
     text-align: center;
     border: none;
-    background: #007ea6;
+    background: #1089FF;
     outline: none;
     border-radius: 30px;
     font-size: 1.2rem;
@@ -149,7 +151,7 @@ button:hover {
  
 .input-group .btn:hover {
     transform: translateY(-5px);
-    background: #005874;
+    background: #23374D;
 }
 
 .forgot-pass-text a {
@@ -168,14 +170,15 @@ button:hover {
     color: #111;
     font-weight: 600;
     text-decoration: none;
+    text-align: center;
 }
  
 .login-register-text p {
-    color: #007ea6;
+    color: #111;
 }
 
 .login-register-text a, .forgot-pass-text a {
-    color: #007ea6;
+    color: #1089FF;
     text-decoration: none;
 }
  

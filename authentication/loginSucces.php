@@ -13,7 +13,7 @@ if (!isset($_SESSION['username'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../Style/login.css">
+    <link rel="stylesheet" type="text/css" href="../style/login.css">
 </head>
 <body>
     <div class="container-logout">

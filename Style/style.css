@@ -7,11 +7,11 @@
 
   /*========== Colors ==========*/
   --hue: 152;
-  --first-color: #005874;
-  --first-color-alt: #007ea6;
-  --nav-color: #007ea6;
+  --first-color: #1089FF;
+  --first-color-alt: #23374D;
+  --nav-color: #23374D;
   --first-color-light: #bff0ff;
-  --first-color-lighten: #007ea6;
+  --first-color-lighten: #1089FF;
   --title-color: #2a2a2a;
   --text-color: #595959;
   --text-color-light: #8c8c8c;
@@ -137,10 +137,6 @@ body.dark-theme{
   column-gap: 1rem;
 }
 
-/*========== 
-Color changes in some parts of 
-the website, in dark theme 
-==========*/
 
 .dark-theme .why__bg,
 .dark-theme .questions{
@@ -493,6 +489,12 @@ the website, in dark theme
 }
 
 /*=============== PRODUCTS ===============*/
+.more-button {
+  float: right;
+  color: var(--first-color);
+}
+
+
 .product__description{
   text-align: center;
 }
@@ -765,7 +767,6 @@ the website, in dark theme
 .footer__input::placeholder {
   color: #f2f2f2;
 }
-
 
 .footer__button{
   padding: 1rem;

@@ -6,7 +6,7 @@
         <link rel="shortcut icon" href="img/Alecto logo white.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="Style/style.css"/>
+        <link rel="stylesheet" href="style/style.css"/>
         <title>Alecto</title>
     </head>
     <body>
@@ -33,7 +33,7 @@
                             <a href="#contact" class="nav__link">Contact Us</a>
                         </li>
                         <li class="nav__item">
-                            <a href="controller/login.php" class="nav__link">Login</a>
+                            <a href="authentication/login.php" class="nav__link">Login</a>
                         </li>
                     </ul>
                    
@@ -57,7 +57,7 @@
             <!--==================== HOME ====================-->
             <section class="home" id="home">
                 <div class="home__container container grid">
-                    <img src="img/Mockup/Mockup BTR Product.png" alt="" class="home__img">
+                    <img src="Assets/Product/Mockup BTR Product.png" alt="" class="home__img">
 
                     <div class="home__data">
                         <h1 class="home__title">
@@ -78,7 +78,7 @@
             <!--==================== ABOUT ====================-->
             <section class="about section container" id="about">
                 <div class="about__container grid">
-                    <img src="img/Alecto logo black.png" alt="" class="about__img">
+                    <img src="Assets/Alecto logo black.png" alt="" class="about__img">
 
                     <div class="about__data">
                         <h2 class="section__title about__title">
@@ -141,9 +141,11 @@
                     A selection of T-shirt collections are available from our shop. Get and enjoy the best quality.
                 </p>
 
+                <p class="more-button"><a href="#">See More</a></p>
+
                 <div class="product__container grid">
                     <article class="product__card">
-                        <img src="img/Mockup/Mockup BTR Product.png" alt="" class="product__img">
+                        <img src="Assets/Product/Mockup BTR Product.png" alt="" class="product__img">
                         <h3 class="product__title">Break The Rules T-Shirt</h3>
                         <span class="product__price">Rp. 80.000</span>
                         <button class="button--flex product__button">
@@ -152,7 +154,7 @@
                     </article>
 
                     <article class="product__card">
-                        <img src="img/Mockup/Mockup NTL Product.png" alt="" class="product__img">
+                        <img src="Assets/Product/Mockup NTL Product.png" alt="" class="product__img">
                         <h3 class="product__title">Nothing To Lose T-Shirt</h3>
                         <span class="product__price">Rp. 80.000</span>
                         <button class="button--flex product__button">
@@ -161,19 +163,20 @@
                     </article>
 
                     <article class="product__card">
-                        <img src="img/Mockup/Mockup STAR Product.png" alt="" class="product__img">
+                        <img src="Assets/Product/Mockup STAR Product.png" alt="" class="product__img">
                         <h3 class="product__title">Star T-Shirt</h3>
                         <span class="product__price">Rp. 82.000</span>
                         <button class="button--flex product__button">
                             <i class="ri-shopping-bag-fill"></i>
                         </button>
                     </article>
+
                 </div>
             </section>
 
             <!--==================== QUESTIONS ====================-->
             <section class="questions section" id="faqs">
-                <h2 class="section__title-center questions__title container">
+                <h2 class="section__title-center questions__title container" style="color: #ffffff">
                     Some common questions <br> were often asked
                 </h2>
 
@@ -406,7 +409,7 @@
         </a>
 
         <!--=============== SCROLL REVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="Script/scrollreveal.min.js"></script>
         
         <!--=============== MAIN JS ===============-->
         <script src="Script/script.js"></script>
